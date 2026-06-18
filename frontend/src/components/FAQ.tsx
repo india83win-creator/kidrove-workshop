@@ -31,8 +31,8 @@ export default function FAQ() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-20">
       <div className="mb-10 flex flex-col gap-2">
-        <span className="text-sm font-semibold uppercase tracking-wider text-[#7C3AED]">
-          Got questions?
+        <span className="font-mono text-sm font-semibold uppercase tracking-wider text-[#5B5FEF]">
+          // got_questions
         </span>
         <h2 className="font-display text-3xl font-bold tracking-tight md:text-4xl">
           Frequently Asked Questions
@@ -45,7 +45,7 @@ export default function FAQ() {
           return (
             <div
               key={faq.question}
-              className="overflow-hidden rounded-2xl border border-[#1B1F3B]/10 bg-white"
+              className="overflow-hidden rounded-2xl border border-[#0F1729]/10 bg-white"
             >
               <button
                 onClick={() => setOpenIndex(isOpen ? null : i)}
@@ -54,13 +54,13 @@ export default function FAQ() {
               >
                 <span className="font-display font-semibold">{faq.question}</span>
                 <ChevronDown
-                  className={`h-5 w-5 flex-shrink-0 text-[#7C3AED] transition-transform ${
+                  className={`h-5 w-5 flex-shrink-0 text-[#5B5FEF] transition-transform ${
                     isOpen ? 'rotate-180' : ''
                   }`}
                 />
               </button>
               <div
-                className={`px-6 text-sm text-[#1B1F3B]/65 transition-all ${
+                className={`px-6 text-sm text-[#0F1729]/65 transition-all ${
                   isOpen ? 'max-h-40 pb-4 opacity-100' : 'max-h-0 overflow-hidden opacity-0'
                 }`}
               >

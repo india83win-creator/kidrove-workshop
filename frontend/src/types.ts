@@ -21,3 +21,9 @@ export interface EnquiryResponse {
   data?: EnquiryFormData & { id?: string }
   errors?: Record<string, string>
 }
+
+export interface WeekPlan {
+  week: number
+  title: string
+  summary: string
+}

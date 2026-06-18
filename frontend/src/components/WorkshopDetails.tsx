@@ -21,8 +21,8 @@ export default function WorkshopDetails() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
       <div className="mb-12 flex flex-col gap-2">
-        <span className="text-sm font-semibold uppercase tracking-wider text-[#7C3AED]">
-          Workshop at a glance
+        <span className="font-mono text-sm font-semibold uppercase tracking-wider text-[#5B5FEF]">
+          // workshop_at_a_glance
         </span>
         <h2 className="font-display text-3xl font-bold tracking-tight md:text-4xl">
           Everything you need to know
@@ -35,13 +35,13 @@ export default function WorkshopDetails() {
           return (
             <div
               key={detail.label}
-              className="flex flex-col items-start gap-3 rounded-2xl border border-[#1B1F3B]/10 bg-white p-5 transition-shadow hover:shadow-md"
+              className="group relative flex flex-col items-start gap-3 rounded-2xl border border-[#0F1729]/10 bg-white p-5 transition-all hover:-translate-y-1 hover:border-[#5B5FEF]/30 hover:shadow-lg hover:shadow-[#5B5FEF]/5"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#7C3AED]/10">
-                <Icon className="h-5 w-5 text-[#7C3AED]" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#5B5FEF]/10 transition-colors group-hover:bg-[#5B5FEF]/15">
+                <Icon className="h-5 w-5 text-[#5B5FEF]" />
               </div>
               <div>
-                <p className="text-xs font-medium uppercase tracking-wide text-[#1B1F3B]/50">
+                <p className="font-mono text-xs font-medium uppercase tracking-wide text-[#0F1729]/45">
                   {detail.label}
                 </p>
                 <p className="font-display text-lg font-bold">{detail.value}</p>
